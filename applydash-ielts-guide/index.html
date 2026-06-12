@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Guide — Academic, General Training & UKVI</title>
+<style>
+  :root{
+    --red:#d6193b;
+    --dark:#1a1a1a;
+    --gray:#5a5a5a;
+    --light:#f7f7f8;
+    --card:#ffffff;
+    --border:#e6e6e9;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+  }
+  header{
+    background:linear-gradient(135deg,var(--red),#9b0f28);
+    color:#fff;
+    padding:50px 20px;
+    text-align:center;
+  }
+  header h1{font-size:2.4rem;margin-bottom:8px;}
+  header p{font-size:1.1rem;opacity:.92;max-width:680px;margin:0 auto;}
+  .badge{
+    display:inline-block;background:#fff;color:var(--red);
+    font-weight:700;padding:6px 16px;border-radius:30px;margin-top:18px;font-size:.85rem;
+    letter-spacing:.5px;
+  }
+  main{max-width:1080px;margin:0 auto;padding:30px 20px 70px;}
+  section{margin-bottom:46px;}
+  h2{
+    font-size:1.5rem;border-left:6px solid var(--red);padding-left:12px;margin-bottom:18px;
+  }
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.04);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,.08);}
+  .card h3{color:var(--red);margin-bottom:10px;font-size:1.1rem;}
+  .card ul{padding-left:18px;color:var(--gray);font-size:.95rem;}
+  .card ul li{margin-bottom:6px;}
+  .pill{
+    display:inline-block;background:#fdecef;color:var(--red);
+    font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;
+  }
+
+  /* Twitter card style block */
+  .tw-card{
+    display:flex;flex-direction:column;border:1px solid var(--border);
+    border-radius:var(--radius);overflow:hidden;background:#fff;
+    text-decoration:none;color:inherit;
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+  }
+  .tw-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.1);}
+  .tw-card .tw-img{
+    height:90px;display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:800;font-size:1.3rem;letter-spacing:1px;
+  }
+  .tw-card .tw-body{padding:14px 16px;}
+  .tw-card .tw-domain{font-size:.75rem;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;}
+  .tw-card .tw-title{font-weight:700;margin:4px 0;font-size:1rem;}
+  .tw-card .tw-desc{font-size:.85rem;color:var(--gray);}
+
+  .bg1{background:linear-gradient(135deg,#1a73e8,#0d3f8c);}
+  .bg2{background:linear-gradient(135deg,#d6193b,#7a0e23);}
+  .bg3{background:linear-gradient(135deg,#00a36c,#03543a);}
+  .bg4{background:linear-gradient(135deg,#7b2ff7,#3a0ca3);}
+  .bg5{background:linear-gradient(135deg,#ff8a00,#b35400);}
+  .bg6{background:linear-gradient(135deg,#444,#111);}
+
+  table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;}
+  th,td{padding:12px 14px;border-bottom:1px solid var(--border);text-align:left;font-size:.95rem;}
+  th{background:var(--red);color:#fff;}
+  tr:last-child td{border-bottom:none;}
+
+  .cta{
+    background:linear-gradient(135deg,var(--red),#9b0f28);
+    color:#fff;border-radius:var(--radius);padding:40px 30px;text-align:center;
+  }
+  .cta h2{color:#fff;border-left:none;padding-left:0;}
+  .cta p{margin-bottom:22px;opacity:.92;}
+  .btn{
+    display:inline-block;background:#fff;color:var(--red);font-weight:800;
+    padding:14px 34px;border-radius:30px;text-decoration:none;font-size:1.05rem;
+    transition:transform .15s ease;
+  }
+  .btn:hover{transform:scale(1.05);}
+
+  footer{
+    text-align:center;padding:24px;font-size:.85rem;color:var(--gray);
+    border-top:1px solid var(--border);
+  }
+  footer a{color:var(--red);text-decoration:none;}
+
+  .toggle-group{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap;}
+  .toggle-btn{
+    border:1px solid var(--border);background:#fff;padding:10px 18px;border-radius:30px;
+    cursor:pointer;font-weight:600;font-size:.9rem;transition:.15s;
+  }
+  .toggle-btn.active{background:var(--red);color:#fff;border-color:var(--red);}
+  .panel{display:none;}
+  .panel.active{display:block;}
+
+  @media(max-width:600px){
+    header h1{font-size:1.8rem;}
+  }
+</style>
+<meta property="og:title" content="IELTS Explained — Academic, General & UKVI Guide">
+<meta property="og:description" content="Everything about IELTS formats, scope, opportunities, free practice tests and registration links.">
+<meta property="og:image" content="https://yoursite.netlify.app/preview.jpg">
+<meta property="og:url" content="https://yoursite.netlify.app">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IELTS Explained — Academic, General & UKVI Guide">
+<meta name="twitter:description" content="Everything about IELTS formats, scope, opportunities, free practice tests and registration links.">
+<meta name="twitter:image" content="https://yoursite.netlify.app/preview.jpg">
+</head>
+<body>
+
+<header>
+  <h1>🎓 IELTS Explained</h1>
+  <p>Everything you need to know about the IELTS test — formats, scope, opportunities, and how to get started with your preparation and registration.</p>
+  <span class="badge">Academic · General Training · UKVI</span>
+</header>
+
+<main>
+
+  <!-- WHAT IS IELTS -->
+  <section>
+    <h2>What is IELTS?</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="pill">Overview</span>
+        <h3>International English Language Testing System</h3>
+        <p style="color:var(--gray);font-size:.95rem;">
+          IELTS is one of the world's most widely accepted English proficiency tests, jointly
+          managed by the British Council, IDP: IELTS Australia, and Cambridge Assessment English.
+          It assesses four skills — Listening, Reading, Writing, and Speaking — and is recognized
+          by universities, employers, professional bodies, and governments for study, work, and
+          migration purposes.
+        </p>
+      </div>
+      <div class="card">
+        <span class="pill">Test Skills</span>
+        <h3>Four Modules Tested</h3>
+        <ul>
+          <li><strong>Listening</strong> — 4 sections, 40 questions</li>
+          <li><strong>Reading</strong> — 3 passages, 40 questions</li>
+          <li><strong>Writing</strong> — 2 tasks (essay & report/letter)</li>
+          <li><strong>Speaking</strong> — face-to-face or video interview</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPES OF IELTS -->
+  <section>
+    <h2>Types of IELTS Tests</h2>
+    <div class="toggle-group">
+      <button class="toggle-btn active" data-target="academic">Academic</button>
+      <button class="toggle-btn" data-target="general">General Training</button>
+      <button class="toggle-btn" data-target="ukvi">IELTS for UKVI</button>
+    </div>
+
+    <div class="panel active" id="academic">
+      <div class="card">
+        <h3>IELTS Academic</h3>
+        <p style="color:var(--gray);">
+          Designed for candidates applying to study at universities and higher education
+          institutions, or seeking professional registration in an English-speaking environment.
+          The Reading and Writing modules reflect academic language used in lectures, textbooks,
+          and reports.
+        </p>
+        <ul>
+          <li>Best for: undergraduate & postgraduate university admissions</li>
+          <li>Best for: professional bodies (medical, engineering, legal councils)</li>
+          <li>Writing Task 1: describe a graph, chart, table, or diagram</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel" id="general">
+      <div class="card">
+        <h3>IELTS General Training</h3>
+        <p style="color:var(--gray);">
+          Suited for candidates migrating to English-speaking countries, or applying for
+          work experience and training programs. The test focuses on everyday English used
+          in social and workplace contexts.
+        </p>
+        <ul>
+          <li>Best for: skilled migration & work visas</li>
+          <li>Best for: secondary education enrolment</li>
+          <li>Writing Task 1: write a letter (formal, semi-formal, or informal)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel" id="ukvi">
+      <div class="card">
+        <h3>IELTS for UKVI (UK Visas & Immigration)</h3>
+        <p style="color:var(--gray);">
+          Same content and format as Academic or General Training, but the results are
+          recognized specifically for UK visa and immigration applications, including the
+          Secure English Language Test (SELT) requirement set by the UK Home Office.
+        </p>
+        <ul>
+          <li>Available in Academic and General Training formats</li>
+          <li>Required for: Student visas, Skilled Worker visas, Settlement & Citizenship</li>
+          <li>Results delivered with a UKVI-approved test report form</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCORE OVERVIEW -->
+  <section>
+    <h2>Band Score at a Glance</h2>
+    <table>
+      <tr><th>Band</th><th>Skill Level</th><th>Description</th></tr>
+      <tr><td>9</td><td>Expert</td><td>Full operational command of English</td></tr>
+      <tr><td>7–8</td><td>Good to Very Good</td><td>Operational command with occasional inaccuracies</td></tr>
+      <tr><td>5–6</td><td>Modest to Competent</td><td>Effective command despite some errors</td></tr>
+      <tr><td>3–4</td><td>Limited</td><td>Basic competence in familiar situations</td></tr>
+      <tr><td>1–2</td><td>Non-user/Intermittent</td><td>Little to no useful ability to communicate</td></tr>
+    </table>
+  </section>
+
+  <!-- SCOPE & OPPORTUNITIES -->
+  <section>
+    <h2>Scope & Opportunities</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🎓 Higher Education</h3>
+        <p style="color:var(--gray);font-size:.95rem;">Accepted by thousands of universities and colleges worldwide for undergraduate, postgraduate, and research programs.</p>
+      </div>
+      <div class="card">
+        <h3>✈️ Migration & Visas</h3>
+        <p style="color:var(--gray);font-size:.95rem;">Used for skilled migration to countries such as the UK, Australia, Canada, and New Zealand, including UKVI-specific visa categories.</p>
+      </div>
+      <div class="card">
+        <h3>💼 Employment</h3>
+        <p style="color:var(--gray);font-size:.95rem;">Recognized by employers and professional/regulatory bodies as proof of English proficiency for work environments.</p>
+      </div>
+      <div class="card">
+        <h3>🏫 School Admissions</h3>
+        <p style="color:var(--gray);font-size:.95rem;">Some secondary schools and training institutions accept IELTS scores for admission of international students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS -->
+  <section>
+    <h2>General Requirements to Take IELTS</h2>
+    <div class="card">
+      <ul>
+        <li>Valid passport or national identity document for registration and on test day</li>
+        <li>No minimum age requirement, though IELTS is generally recommended for ages 16+</li>
+        <li>No specific qualifications needed to register — open to all proficiency levels</li>
+        <li>Choice of Paper-based or Computer-delivered test formats (availability varies by test centre)</li>
+        <li>Results are typically valid for 2 years for most institutions and visa applications</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FREE PREP RESOURCES -->
+  <section>
+    <h2>Free Preparation Resources</h2>
+    <div class="grid">
+      <a class="tw-card" href="https://www.ielts.org/for-test-takers/sample-test-questions" target="_blank" rel="noopener">
+        <div class="tw-img bg1">IELTS.org</div>
+        <div class="tw-body">
+          <div class="tw-domain">ielts.org</div>
+          <div class="tw-title">Official Sample Test Questions</div>
+          <div class="tw-desc">Free sample papers for Listening, Reading, Writing & Speaking from the official IELTS organisation.</div>
+        </div>
+      </a>
+
+      <a class="tw-card" href="https://takeielts.britishcouncil.org/prepare-test/free-ielts-practice-tests" target="_blank" rel="noopener">
+        <div class="tw-img bg2">British Council</div>
+        <div class="tw-body">
+          <div class="tw-domain">britishcouncil.org</div>
+          <div class="tw-title">Free IELTS Practice Tests</div>
+          <div class="tw-desc">Practice materials and full mock tests covering all four modules, provided by the British Council.</div>
+        </div>
+      </a>
+
+      <a class="tw-card" href="https://ielts.idp.com/prepare" target="_blank" rel="noopener">
+        <div class="tw-img bg3">IDP IELTS</div>
+        <div class="tw-body">
+          <div class="tw-domain">ielts.idp.com</div>
+          <div class="tw-title">IDP Free Practice & Prep Hub</div>
+          <div class="tw-desc">Free preparation tools, tips, and practice tests from one of the official IELTS test providers.</div>
+        </div>
+      </a>
+
+      <a class="tw-card" href="https://www.ielts.org/take-a-test/free-practice-tests" target="_blank" rel="noopener">
+        <div class="tw-img bg4">Mock Test</div>
+        <div class="tw-body">
+          <div class="tw-domain">ielts.org</div>
+          <div class="tw-title">Free Online Mock Test</div>
+          <div class="tw-desc">Take a full-length mock test online to assess your current band score before test day.</div>
+        </div>
+      </a>
+
+      <a class="tw-card" href="https://www.cambridgeenglish.org/test-your-english/" target="_blank" rel="noopener">
+        <div class="tw-img bg5">Cambridge</div>
+        <div class="tw-body">
+          <div class="tw-domain">cambridgeenglish.org</div>
+          <div class="tw-title">Test Your English (Free)</div>
+          <div class="tw-desc">Quick free level check tool from Cambridge Assessment English to gauge your current ability.</div>
+        </div>
+      </a>
+
+      <a class="tw-card" href="https://takeielts.britishcouncil.org/teach-ielts/ielts-resources" target="_blank" rel="noopener">
+        <div class="tw-img bg6">Resources</div>
+        <div class="tw-body">
+          <div class="tw-domain">britishcouncil.org</div>
+          <div class="tw-title">IELTS Teaching & Learning Resources</div>
+          <div class="tw-desc">Additional free resources, tips and guides for IELTS preparation across all modules.</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- OFFICIAL REGISTRATION -->
+  <section>
+    <h2>Official Registration Links</h2>
+    <div class="grid">
+      <a class="tw-card" href="https://www.ielts.org/book-a-test" target="_blank" rel="noopener">
+        <div class="tw-img bg1">IELTS.org</div>
+        <div class="tw-body">
+          <div class="tw-domain">ielts.org</div>
+          <div class="tw-title">Book a Test — Official IELTS</div>
+          <div class="tw-desc">Find a test centre and register for Academic, General Training, or UKVI IELTS.</div>
+        </div>
+      </a>
+      <a class="tw-card" href="https://www.britishcouncil.org/exam/ielts" target="_blank" rel="noopener">
+        <div class="tw-img bg2">British Council</div>
+        <div class="tw-body">
+          <div class="tw-domain">britishcouncil.org</div>
+          <div class="tw-title">Register via British Council</div>
+          <div class="tw-desc">Official registration portal through the British Council, one of the IELTS partners.</div>
+        </div>
+      </a>
+      <a class="tw-card" href="https://ielts.idp.com/" target="_blank" rel="noopener">
+        <div class="tw-img bg3">IDP IELTS</div>
+        <div class="tw-body">
+          <div class="tw-domain">ielts.idp.com</div>
+          <div class="tw-title">Register via IDP IELTS</div>
+          <div class="tw-desc">Book your test through IDP, the co-owner and global delivery partner for IELTS.</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Need Help With Your Application?</h2>
+    <p>Apply for guided IELTS registration support or send us your queries — our team will get back to you.</p>
+    <a class="btn" href="mailto:applydash@gmail.com?subject=IELTS%20Registration%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20get%20more%20information%20about%20IELTS%20registration.">
+      📩 Apply / Contact via Email
+    </a>
+  </section>
+
+</main>
+
+<footer>
+  Information compiled for general guidance only. For official details, always refer to
+  <a href="https://www.ielts.org" target="_blank" rel="noopener">IELTS.org</a>,
+  <a href="https://www.britishcouncil.org" target="_blank" rel="noopener">British Council</a>, and
+  <a href="https://www.idp.com" target="_blank" rel="noopener">IDP</a>.
+  <br>For registration & queries: <a href="mailto:applydash@gmail.com">applydash@gmail.com</a>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.toggle-btn');
+  const panels = document.querySelectorAll('.panel');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.target).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
